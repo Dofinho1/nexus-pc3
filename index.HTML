@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXUS PC</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEXUS <span>PC</span></div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#loja">Loja</a>
+        <a href="#produto">Produto</a>
+    </nav>
+
+    <button id="cart">Carrinho (0)</button>
+</header>
+
+
+<main>
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+            <small>HARDWARE SEM LIMITES</small>
+
+            <h1>
+                Monte o setup<br>
+                que <span>pensa grande</span>
+            </h1>
+
+            <p>
+                Peças, periféricos e suporte para transformar
+                sua ideia em performance.
+            </p>
+
+            <a href="#loja" class="button">
+                Explorar a loja →
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="Imagem/setup-rgb-2-1 (1).jpg"
+                alt="Setup gamer"
+            >
+        </div>
+
+    </section>
+
+
+    <section id="loja" class="store">
+
+        <div class="search">
+             Pesquisar produtos
+        </div>
+
+        <div class="store-title">
+            <div>
+                <h2>Loja / catálogo</h2>
+                <p>Escolha seu próximo upgrade.</p>
+            </div>
+
+            <button class="filter">Categorias</button>
+        </div>
+
+
+        <div class="products">
+
+            <article class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=85"
+                    alt="Placa de vídeo"
+                >
+
+                <small>GRÁFICOS</small>
+
+                <h3>GPU Performance X</h3>
+
+                <strong>A partir de R$ 2.899</strong>
+
+                <a href="#produto">Ver produto →</a>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=85"
+                    alt="Processador"
+                >
+
+                <small>PROCESSADORES</small>
+
+                <h3>CPU Core Boost</h3>
+
+                <strong>A partir de R$ 1.499</strong>
+
+                <a href="#produto">Ver produto →</a>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    src="Imagem/OIP.jpg"
+                    alt="Placa mãe"
+                >
+
+                <small>COMPONENTES</small>
+
+                <h3>Placa-mãe Nexus Pro</h3>
+
+                <strong>A partir de R$ 1.099</strong>
+
+                <a href="#produto">Ver produto →</a>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=700&q=85"
+                    alt="Periféricos"
+                >
+
+                <small>PERIFÉRICOS</small>
+
+                <h3>Kit Desk Essential</h3>
+
+                <strong>A partir de R$ 699</strong>
+
+                <a href="#produto">Ver produto →</a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section id="produto" class="product">
+
+        <div>
+            <img
+                src="Imagem/OIP.jpg"
+                alt="GPU Performance X"
+            >
+        </div>
+
+        <div class="product-info">
+
+            <small>LOJA / GRÁFICOS</small>
+
+            <h2>GPU Performance X</h2>
+
+            <p>
+                Potência gráfica para jogos, criação e inteligência
+                artificial. Performance para seu setup.
+            </p>
+
+            <div class="specs">
+                <div>
+                    <b>4K+</b>
+                    <span>Resolução</span>
+                </div>
+
+                <div>
+                    <b>DLSS 3</b>
+                    <span>Frames inteligentes</span>
+                </div>
+
+                <div>
+                    <b>12 GB</b>
+                    <span>Memória</span>
+                </div>
+
+                <div>
+                    <b>3 anos</b>
+                    <span>Garantia</span>
+                </div>
+            </div>
+
+            <button class="add">
+                Adicionar ao carrinho →
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script>
+    document.querySelector("#cart").onclick = () => {
+        alert("Seu carrinho está vazio.");
+    };
+
+    document.querySelector(".add").onclick = function () {
+        this.textContent = "Adicionado ✓";
+
+        setTimeout(() => {
+            this.textContent = "Adicionar ao carrinho →";
+        }, 1500);
+    };
+</script>
+
+</body>
+</html>
